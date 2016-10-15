@@ -36,10 +36,10 @@ class App extends Component {
       <Main>
         <Header>
           <Logo src={logo} alt="logo"/>
-          <Headline>Welcome to React</Headline>
+          <Headline>Welcome to React!</Headline>
         </Header>
         <Content>
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Built at { (new Date()).toString() }
         </Content>
       </Main>
     );

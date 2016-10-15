@@ -1,15 +1,17 @@
 {
-  "name": "cra-sb-sc",
+  "name": "storybook_styled-components_example",
   "version": "0.0.1",
-  "private": true,
+  "homepage": "http://amsb.github.io/storybook_styled-components_example",
+  "private": false,
   "devDependencies": {
-    "react-scripts": "0.6.1",
-    "@kadira/storybook": "^2.24.0"
+    "@kadira/storybook": "^2.24.0",
+    "gh-pages": "^0.11.0",
+    "react-scripts": "0.6.1"
   },
   "dependencies": {
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "styled-components": "^1.0.3"
+    "styled-components": "^1.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,6 +19,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy": "npm run build && gh-pages -d build",
+    "browser-snapshots": "npm run deploy && open https://developer.microsoft.com/en-us/microsoft-edge/tools/screenshots/?url=https%3A%2F%2Famsb.github.io%2Fstorybook_styled-components_example%2F"
   }
 }
